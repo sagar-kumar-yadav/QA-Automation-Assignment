@@ -8,6 +8,7 @@ test("Valid login", async (t) => {
     .typeText("#username", "sagarkryadav31@gmail.com")
     .typeText("#password", "Sagar$321")
     .click("#login")
+    .expect(Selector('#sidebar-title')).textContent
 });
 
 test("Invalid login", async (t) => {
